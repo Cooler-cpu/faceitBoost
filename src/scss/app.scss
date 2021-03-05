@@ -1,0 +1,81 @@
+@import 'components/all';
+
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper{
+    flex-wrap: wrap;
+}
+
+.calculatorFaceit{
+    margin-top: 80px;
+    padding: 20px;
+    .container{
+        max-width: 1140px;
+        margin: 0 auto;
+        .calculator{
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+            
+
+            &__elo_inputNum{
+                display: flex;
+                margin-bottom: 3em;
+                .inputNumBox{
+                    display: flex;
+                    flex-direction: column;
+                    flex: 0 0 50%;
+
+                    &__title{
+                        margin-bottom: 15px;
+                        text-align: center;
+                        span{
+
+                        }
+
+                    }
+
+                    &__content{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 0 1em 0 1em;
+                    }
+
+                    &__inputElo{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 200px;
+                        height: 80px;
+                        border-radius: 50px!important;
+                        border: 2px solid;
+                        border-color: #eaeaea;
+                        background: #fafafa;
+                    }
+
+                }
+
+            }
+
+            &__elo_inputBarBox{
+                    display: flex;
+                    text-align: center;
+                    flex-direction: column;
+                    justify-content: center;
+                .progressEloBar{
+            
+                }
+            }
+
+
+        }
+
+    }
+
+}
+
