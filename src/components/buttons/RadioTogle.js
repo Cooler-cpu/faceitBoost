@@ -7,11 +7,16 @@ const RadioTogle = () => {
 
     const buttonHandleClick = () => {
         if(togle){
+
             setTogle(false);
+
         }else{
+
             setTogle(true);
+
         }
     }
+
 
     return(
         <div className={togle ? "radioTogle radioTogle__open" : "radioTogle"} onClick={()=>buttonHandleClick()}>

@@ -4,8 +4,21 @@ import * as S from "./styles";
 
 const Input = (props) => {
 
+  let isRequired;
+
+  const [isReq, setReq] = React.useState(false);
+
   const onChangeHandler = event => {
-    props.onChangeHandler(event.target.value)
+    console.log("is req", isReq );
+    props.onChangeHandler(event.target.value);
+    isRequired = event.target.value;
+    console.log("is req", isReq );
+    console.log("is required", isRequired );
+    if(isRequired !== ""){
+      setReq(true);
+    }else{
+      setReq(false);
+    }
   }
 
   return (
@@ -17,7 +30,7 @@ const Input = (props) => {
       />
 
         <S.Label
-        className="labelFix"
+        className={isReq ? "labelFix" : ""}
         >
           {props.label}
         </S.Label>
