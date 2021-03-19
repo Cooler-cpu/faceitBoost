@@ -2,7 +2,9 @@ import React from 'react'
 
 import {BrowserRouter as Router} from 'react-router-dom'
 import { Route } from 'react-router-dom'
-import CalculatingElo from './components/CalculatingElo'
+import Calculator from './components/Calculator'
+
+
 
 //import { useSelector } from 'react-redux'
 
@@ -14,7 +16,7 @@ function App() {
 
         {/* need a router component*/}
         <Route path="/">
-        <CalculatingElo/>
+        <Calculator/>
         </Route>
         
         {/* need a router comwponent*/}

@@ -1,0 +1,92 @@
+.PrimaryButton {
+    background: linear-gradient(20deg, var(--copartBlue), var(--copartBlue));
+    padding: 10px 16px 9px;
+    color: var(--white);
+    border: 1px solid var(--copartBlue);
+    border-radius: 2px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all 0.1s;
+    cursor: pointer;
+    display: block;
+    max-width: 150px;
+    transform: translateZ(0);
+  }
+  
+  .PrimaryButton:hover:not(:disabled) {
+    backface-visibility: hidden;
+    background: linear-gradient(20deg, var(--copartBlue), var(--copartBlue));
+    box-shadow: rgba(0, 0, 0, 0.14) 0px 4px 6px -2px,
+      rgba(0, 0, 0, 0.12) 0px 2px 4px 1px;
+    transform: scale(1.02);
+  }
+  
+  .PrimaryButton:disabled {
+    cursor: not-allowed;
+    opacity: 0.4;
+    filter: saturate(0.25);
+    border: 0;
+  }
+  
+  /*----------*/
+  
+  .SecondaryButton {
+    background: linear-gradient(20deg, #318ff5, #318ff5);
+    padding: 9px 12px 8px;
+    color: var(--white);
+    border: 1px solid #318ff5;
+    border-radius: 2px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all 0.1s;
+    cursor: pointer;
+    display: block;
+    max-width: 150px;
+  }
+  
+  .SecondaryButton:hover:not(:disabled) {
+    border-color: transparent;
+    background: linear-gradient(20deg, var(--copartBlue), var(--copartBlue));
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px, rgba(0, 0, 0, 0.1) 0px 1px 4px;
+  }
+  
+  .SecondaryButton:disabled {
+    cursor: not-allowed;
+    opacity: 0.4;
+    filter: saturate(0.25);
+  }
+  
+  /*----------*/
+  
+  .PrimaryOutlineButton {
+    background: none;
+    padding: 9px 12px 8px;
+    color: var(--copartBlue);
+    border: 1px solid var(--copartBlue);
+    border-radius: 2px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: background 0.05s;
+    cursor: pointer;
+    display: block;
+    max-width: 150px;
+  }
+  
+  .PrimaryOutlineButton:disabled {
+    cursor: not-allowed;
+    opacity: 0.4;
+    filter: saturate(0.25);
+    border-color: var(--charcoal);
+    color: var(--charcoal);
+  }
+  
+  .PrimaryOutlineButton:hover:not(:disabled) {
+    border-color: transparent;
+    color: white;
+    background: linear-gradient(20deg, var(--copartBlue), #1c61d1);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px;
+  }
+  

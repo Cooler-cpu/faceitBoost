@@ -5,13 +5,17 @@ const RadioTogle = () => {
 
     const [togle, setTogle] = useState(false); 
 
-    // const buttonHandleClick = () => {
-        
-    // }
+    const buttonHandleClick = () => {
+        if(togle){
+            setTogle(false);
+        }else{
+            setTogle(true);
+        }
+    }
 
     return(
-        <div className="radioTogle" onClick={()=>setTogle(true)}>
-            <div className={togle ? "circleIcon": null}/>
+        <div className={togle ? "radioTogle radioTogle__open" : "radioTogle"} onClick={()=>buttonHandleClick()}>
+            <div className={togle ? "circleIcon circle-open": "circleIcon"}/>
         </div>
     )
 }

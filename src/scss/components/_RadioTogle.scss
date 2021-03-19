@@ -1,16 +1,25 @@
 .radioTogle{
-    background: rgba(0,0,0,.05);
+    background: grey;
     width: 50px;
     height: 20px;
     border-radius: 500rem;
+    cursor: pointer;
 
     .circleIcon{
-        transition: background .3s ease,left .3s ease;
+        transition: margin .4s;
         width: 1.2rem;
         height: 1.2rem;
         background-color: honeydew;
         border-radius: 500rem;
         position: relative;
+    }
+
+    .circle-open{
+        margin-left: 30px;
+    }
+
+    &__open{
+        background-color: #4682B4;
     }
 
 }
