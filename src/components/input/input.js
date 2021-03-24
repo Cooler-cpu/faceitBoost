@@ -9,11 +9,9 @@ const Input = (props) => {
   const [isReq, setReq] = React.useState(false);
 
   const onChangeHandler = event => {
-    console.log("is req", isReq );
+
     props.onChangeHandler(event.target.value);
     isRequired = event.target.value;
-    console.log("is req", isReq );
-    console.log("is required", isRequired );
     if(isRequired !== ""){
       setReq(true);
     }else{

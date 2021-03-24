@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React  from 'react';
 
 import level1 from '../assets/img/level1.svg'
 import level10 from '../assets/img/level10.svg'

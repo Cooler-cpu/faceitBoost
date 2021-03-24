@@ -16,6 +16,19 @@ const Authentication = (props) => {
         setPassValue(value);
     };
 
+
+    // Authenticated action
+    const RegistrDisplayChange = () => {
+        props.onHandleStepChange(4);
+    }
+
+
+    const authButtonHandler = props => {
+        console.log(email);
+        console.log(pass);
+    }
+    
+
     return(
         <div className="container-calculator">
 
@@ -55,11 +68,36 @@ const Authentication = (props) => {
 
                 </div>
 
-                <div className="calculator__elo_buttonSection">
+                <div className="calculator__authFormBox">
+                    <div id="faceitLogin">
+                    <button   class="button Faceit">
+                        Connect with Faceit
+                    </button>
+                    </div>
+                </div>
 
-                    <Button primary> registration </Button>
+
+                <div className="calculator__createAccHref calculator__authFormBox aStyle" 
+                onClick={RegistrDisplayChange}
+                >
+
+                    <a className="aStyle">
+                        first time on the site? Create an account
+                    </a>
 
                 </div>
+
+
+                <div className="calculator__elo_buttonSection">
+
+                    <Button primary onClick={authButtonHandler}> 
+                        registration 
+                    </Button>
+
+                </div>
+
+
+                
 
             </div>
     

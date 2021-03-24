@@ -11,7 +11,29 @@
     <title>React App</title>
   </head>
   <body>
+
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <script type="text/javascript" src="https://cdn.faceit.com/oauth/faceit-oauth-sdk-1.2.7.min.js"
+    ></script>
+    <script type="text/javascript">
+     function callback(response){
+     if(response.isIdTokenValid === true){
+        alert("rofl");
+        return;
+     }
+     alert('The id token is not valid, something went wrong');
+     }
+     var initParams = {
+     client_id: 'client1',
+     response_type: 'token',
+     state: 'informationYouWantPassedToTheRedirectUri',
+     debug: true
+     };
+     function rofl(){
+        console.log("da");
+        FACEIT.init(initParams, callback);
+     }
+    </script>
   </body>
 </html>

@@ -55,6 +55,16 @@
 }
 
 
+.aStyle{
+    font-size: 11px;
+    cursor: pointer;
+    a:hover{
+        border-bottom: 0.5px solid black;
+        opacity: 0.8;
+    }
+}
+
+
 .calculatorFaceit{
     margin-top: 80px;
     display: flex;
@@ -230,6 +240,7 @@
             justify-content: center;
             height: 4em;
             border-top: 1px solid #d2d2dd;
+            margin-top: 20px;
             .buttonGreen{
                 width: 15rem;  
                 height: 2rem;  
@@ -243,7 +254,8 @@
         &__authTitle{
             color: #746981;
             //change
-            width: 500px;
+            //max-width: 640px;
+            min-width: 570px;
             h1{
                 font-size: 35px;
                 text-align: center;
@@ -254,6 +266,7 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+
             //padding: 20px 20px 0px 0px;
             margin-left: 20px;
             border-left: 3px solid #2980B9;
@@ -273,6 +286,16 @@
                 font-size: 13px;
             }
         }
+
+        &__createAccHref{
+            border-left: 0px;
+            display: inline-block;
+            a{
+
+            }
+        }
+
+
 
     }
 
